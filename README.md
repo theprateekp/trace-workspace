@@ -24,6 +24,10 @@ Trace is intentionally opinionated about the gaps that appear when task tools, m
 
 The meeting room in this repository is a product-ready interaction surface for a real-time provider integration. Production media transport, recording storage, transcription, calendar sync, and collaborative document conflict resolution should be wired to the team's chosen infrastructure before shipping to customers. The full-stack scaffold already includes the server, database, storage, and authentication foundations needed for that next phase.
 
+## Research basis
+
+The product-gap synthesis in [`docs/trace-product-gap-synthesis.md`](docs/trace-product-gap-synthesis.md) records the verified research that shaped the scope. It compares Google Meet, Zoom, Microsoft Teams, modern project-management tools, and collaborative file and slide editors. Its main conclusion is that Trace should optimize for a transparent, permission-aware work record rather than imitate every provider feature.
+
 ## Design system
 
 Trace uses a light workspace canvas with cool gray surfaces, sky blue navigation and data accents, bright coral for action and urgency, and restrained purple and green status cues. Typography combines DM Sans for readable UI copy with Space Grotesk for compact, editorial headings. Interactions use short transitions and honor reduced-motion preferences.
@@ -51,6 +55,7 @@ client/src/index.css          Trace visual system and responsive layout
 client/src/App.tsx            App shell and routing
 server/                       tRPC server and authentication foundation
 drizzle/                      Database schema and migrations
+docs/                         Product-gap research and implementation scope
 ```
 
 ## Verification
